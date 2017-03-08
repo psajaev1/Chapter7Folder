@@ -12,15 +12,32 @@ public class Reptile extends Animal
    
    public  Reptile(){
        super("reptile");
-       type = "reptile";S
+     //  type = "reptile";
        numberOfLegs = 0;
        // calls the constructor of Animal
        
     }
     
+    public int getLegs(){
+        return numberOfLegs;
+    }
     public Reptile(int numberLegs){
         super("reptile");
-        numberOfLegs = numberlegs;
+        numberOfLegs = numberLegs;
     
 
+}
+
+    public Reptile(String type, int n_o_L){
+        super("reptile");
+        numberOfLegs = n_o_L;
+    
+
+}
+public String toString(){
+    
+    return super.toString() + 
+    "\nI have "+getLegs()+ "number of Legss";
+
+}
 }
