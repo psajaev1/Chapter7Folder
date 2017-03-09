@@ -6,11 +6,11 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Reptile extends Animal
+public class  Reptile extends Animal
 {
    private int numberOfLegs;
    
-   public  Reptile(){
+public  Reptile(){
        super("reptile");
      //  type = "reptile";
        numberOfLegs = 0;
@@ -19,8 +19,14 @@ public class Reptile extends Animal
     }
     
     public int getLegs(){
+        
         return numberOfLegs;
     }
+    
+public String move(){
+    
+    return "crawl";
+}
     public Reptile(int numberLegs){
         super("reptile");
         numberOfLegs = numberLegs;

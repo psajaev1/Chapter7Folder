@@ -1,23 +1,36 @@
 
 
 /**
- * Write a description of class Snake here.
+ * Write a description of class Cobra here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Snake extends Reptile
+public class Cobra extends Snake
 {
     /** description of instance variable x (add comment for each instance variable) */
+    private boolean poison;
     int length;
-
     /**
-     * Default constructor for objects of class Snake
+     * Default constructor for objects of class Cobra
      */
-    public Snake(int snakeLength)
+    public Cobra(int newlength, boolean newpoison)
     {
-        super(0);
-         length = snakeLength;
+            super(0);
+            length = newlength;
+            poison = newpoison;
+      
+    }
+    
+    public String move(){
+        
+        return "slither";
+    }
+    
+     public String toString(){
+        
+        return super.toString() + " is a cobra, " + length+ " inches long";
+        
     }
 
     /**
@@ -31,21 +44,10 @@ public class Snake extends Reptile
      * @param    y    description of parameter y
      * @return    description of the return value
      */
-    public int getLength()
+    public boolean getPoison()
     {
-        return length;
+        // put your code here
+        return poison;
     }
-    
-    public String move(){
-        
-        return "slither";
-    }
-    
-    public String toString(){
-        
-        return super.toString() + " is a snake, " + length+ " inches long";
-        
-    }
-    
 
 }

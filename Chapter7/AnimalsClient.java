@@ -18,9 +18,12 @@ public class AnimalsClient
         System.out.println(sue);
         
         Snake Brian = new Snake(10);
-        System.out.println(brian.getType());
-        System.out.println(brian.getLegs());
+        System.out.println(Brian.getType());
+        System.out.println(Brian.getLegs());
         System.out.println(Brian);
+        
+        System.out.println(sue.move());
+        System.out.println(Brian.move());
         
         
         
